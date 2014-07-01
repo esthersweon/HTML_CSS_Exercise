@@ -66,53 +66,51 @@
   <h1>Products > For Advertisers <small> Find publishers to display your ads.</small></h1>
 </div>
 
+<div class="tabsAndPanels">
+  <ul class="tabs">
+    <li style="float:left;"><a href="#video">Video</a></li>
+    <li style="float:left;"><a href="#source_attribution">Source Attribution</a></li>
+    <li style="float:left;"><a href="#additional_resources">Additional Resources</a></li>
+  </div>
 
-
-<div class="col-sm-9">
-  <div style="width:900px; margin-right:auto; margin-left:auto">
-  <iframe width="892" height="528" src="http://www.youtube.com/embed/sDb1k9xhXiE" frameborder="0" allowfullscreen></iframe>
+  <div class="panelContainer">
+    <div class="panel" id="video">
+      <div id="video" style="width:900px; margin-right:auto; margin-left:auto">
+        <iframe width="892" height="528" src="http://www.youtube.com/embed/sDb1k9xhXiE" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="panel" id="source_attribution">
+      <p>Marketers, don't let the complexity and fragmentation of mobile hold you back. Our suite of reporting tools provide marketers with all the data required to optimize campaigns, improve ROI, and boost revenue. The TapSense platform makes it easy to work with any partner that you want. We also provide access to innovative ad formats like Native Ads, Full Screen Interstitials and Video.</p>
+      <h5>Works Across All Channels</h5>
+      <p>The platforms tracks conversion across all free channels such as email, social, and refer-a-friend. It also works with paid channels like ad networks, DSPs (demand side platforms), and publisher direct.</p>
+      <h5>Made For Marketers</h5>
+      <p>Marketers shouldn't have to become mobile technologist in order to do mobile marketing. Our platform manages all the technology, and allows marketers to focus on marketing.</p>
+      <h5>Easy to Use</h5>
+      <p>A single solution with everything a mobile marketer needs. Campaign management, access to publishers, and measurement tools to understand your ROI (return on investment).</p>
+    </div>
+    <div class="panel" id="additional_resources">
+      <ul>
+        <li><a href="product_guides.html">Product Guides</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
-<div class="col-sm-3">
-  <h4>Easily show multiple ads in a single ad slot and get 5X the number of impressions.</h4>
-  <ul>
-  <li><a href="#source_attribution">Source Attribution</a><br>
-  Campaign Tools for Mobile Marketers.</li>
-  </ul>
-  <br>
-  <h4>Additional Resources</h4>
-  <ul>
-    <li><a href="product_guides.html">Product Guides</a></li>
-    <li><a href="downloads.html">Downloads</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</div>
+<script>
 
-<div class="col-sm-12" style="padding: 50px; text-align: center">
-  <p>TapSense helps advertisers get the word out.</p>
-</div>
+$('.tabs a').click(function() {
+  $('.panel').hide();
+  $('.tabs a.active').removeClass('active');
+  $(this).addClass('active');
+  var panel = $(this).attr('href');
+  $(panel).fadeIn(250);
+  return false;
+})
 
-<div class="row">
-  <div class="col-sm-6" style="padding: 40px">
-    <h3 id="source_attribution">Source Attribution</h3>
-    <h5>Campaign Tools for Mobile Marketers</h5>
-    <img src="https://s3-us-west-1.amazonaws.com/jm-testbucket/website_test/products_page/source_main.png" style="height: 100%; width:100%;">
-  </div>
-    <div class="col-sm-6">
-    <p>Marketers, don't let the complexity and fragmentation of mobile hold you back. Our suite of reporting tools provide marketers with all the data required to optimize campaigns, improve ROI, and boost revenue. The TapSense platform makes it easy to work with any partner that you want. We also provide access to innovative ad formats like Native Ads, Full Screen Interstitials and Video.</p>
-    <h5>Works Across All Channels</h5>
-    <p>The platforms tracks conversion across all free channels such as email, social, and refer-a-friend. It also works with paid channels like ad networks, DSPs (demand side platforms), and publisher direct.</p>
-    <h5>Made For Marketers</h5>
-    <p>Marketers shouldn't have to become mobile technologist in order to do mobile marketing. Our platform manages all the technology, and allows marketers to focus on marketing.</p>
-    <h5>Easy to Use</h5>
-    <p>A single solution with everything a mobile marketer needs. Campaign management, access to publishers, and measurement tools to understand your ROI (return on investment).</p>
-  </div>
-</div>
-
-<div class="col-sm-12">
-  <img src="https://s3.amazonaws.com/tapsense_website/homepage/featuredin.jpg" style="height:100%; width:100%">
-</div>
+$('.tabs li:first a').click();
+</script>
 
 </body>
 </html>
