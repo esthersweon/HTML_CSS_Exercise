@@ -2,19 +2,22 @@ th, td{
 	padding: 15px;
 }
 
-a:hover {
-	background-color: lightblue;
-};
-
-.tabsAndPanels{
-	width: 50%;
-	margin-left:auto;
+.tabsAndPanels {
+	width: 90%;
+	margin-left: auto;
 	margin-right: auto;
 }
 
+.panelContainer{
+	width:90%;
+	margin-bottom: 50px;
+	clear: left;
+	border: 1px solid black;
+	background-color: white;
+}
+
 .tabs{
-	margin: 0;
-	padding: 0;
+	width: 90%;
 }
 
 .tabs li {
@@ -25,14 +28,23 @@ a:hover {
 .tabs a {
 	text-decoration: none;
 	display: block;
-	padding: 3px 5px;
+	padding: 5px 20px;
+	border: 1px solid black;
+	border-radius: 10px 10px 0px 0px;
+	margin-bottom: -1px;
 }
 
-.tabs a:hover{
+
+
+.tabs a.active{
 	background-color: white;
+	border-bottom: white;
+	position: relative;
 };
 
-/*.panelContainer{
-	clear:left;
-	background-color: blue;
-}*/
+
+.panel{
+	background-color: lightyellow;
+}
+
+
