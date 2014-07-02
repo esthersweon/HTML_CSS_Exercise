@@ -4,9 +4,21 @@
   <title>TapSense</title>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="tapsense.css" type="text/css">
+  <link rel="stylesheet" href="anythingslider.css" type="text/css">
+  
+  <script src="jquery.anythingslider.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#slider').anythingSlider({
+      buildArrows : true, 
+      buildStartStop : false,
+      autoPlay : true
+    });
+  })
+  </script>
 </head>
 
 <body>
@@ -66,23 +78,38 @@
   <img src="images/intro.jpg" style="height:100%; width:100%">
 </div>
 
-<div class="col-sm-12" style="padding-bottom: 20px">
-  <a href="blog.html"><img src="http://www.tapsense.com/wp-content/uploads/2014/06/pebble_bannercomp-1280x648.jpg" style="height:100%; width:100%"/></a>
+<div class-"col-sm-12">
+  <div id="slider">
+    <div>
+      <a href="blog.html"><img src="http://www.tapsense.com/wp-content/uploads/2014/06/pebble_bannercomp-1280x648.jpg" style="height:100%; width:100%"/></a>
+    </div>
+    <div>
+      <a href="blog.html"><img src="http://www.tapsense.com/wp-content/uploads/2014/06/pebble_bannercomp-1280x648.jpg" style="height:100%; width:100%"/></a>
+    </div>
+    <div>
+      <a href="blog.html"><img src="http://www.tapsense.com/wp-content/uploads/2014/06/pebble_bannercomp-1280x648.jpg" style="height:100%; width:100%"/></a>
+    </div>
+  </div>
 </div>
 
-<div class="col-sm-4">
-  <a href="publishers.html"><img src="images/publishers.png"></a>
-</div>
-<div class="col-sm-4">
-  <a href="advertisers.html"><img src="images/advertisers.png"></a>
-</div>
-<div class="col-sm-4">
-  <a href="blog.html"><img src="images/blog.png"></a>
+
+<div class="row">
+  <div class="col-sm-2 col-sm-offset-2">
+    <a href="publishers.html"><img src="images/publishers.png" style="height:100%; width:100%"></a>
+  </div>
+  <div class="col-sm-2 col-sm-offset-1">
+    <a href="advertisers.html"><img src="images/advertisers.png" style="height:100%; width:100%"></a>
+  </div>
+  <div class="col-sm-2 col-sm-offset-1">
+    <a href="blog.html"><img src="images/blog.png" style="height:100%; width:100%"></a>
+  </div>
 </div>
 
-<div class="col-sm-12">
-  <h2 style="text-align: center">CUSTOMERS & PARTNERS</h2>
-  <img src="images/partners.jpg" />
+<div class="row">
+  <div class="col-sm-12">
+    <h2 style="text-align: center">CUSTOMERS & PARTNERS</h2>
+    <img src="images/partners.jpg" style="height:100%; width:100%"/>
+  </div>
 </div>
 
 
@@ -91,7 +118,7 @@
 </div>
 
 <script type="text/javascript">
-});
+
 </script>
 </body>
 </html>
